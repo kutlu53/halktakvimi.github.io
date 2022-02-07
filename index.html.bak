@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  
+}
+
+
+.button {
+  background-color: lightgrey;
+  border-radius: 8px;
+  border: solid;
+  color: white;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 1px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.buttonaktif:hover {
+  background-color: blue; /* Green */
+  color: white;
+}
+
+.buttonaktif {
+  background-color: #008CBA;
+  border-radius: 8px;
+  border: solid;
+  color: white;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 1px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+</style>
+
+</head>
+<body>
+	
+	<h2 align="center" style="color: orange;">
+	Aylar..: <select name="aylar" id="aylar" onchange="aykontrol()"> 
+    		<option value="1">Ocak</option>
+    		<option value="2">Şubat</option>
+    		<option value="3">Mart</option>
+    		<option value="4">Nisan</option>
+		<option value="5">Mayıs</option>
+		<option value="6">Haziran</option>
+		<option value="7">Temmuz</option>
+		<option value="8">Ağustos</option>	
+		<option value="9">Eylül</option>
+		<option value="10">Ekim</option>
+		<option value="11">Kasım</option>
+		<option value="12">Aralık</option>
+  	</select>
+	</h2>
+
+	
+	<br />
+	
+	<table id="tablo" bgcolor="lightgrey" align="center" 
+		cellspacing="13" cellpadding="13" style="background-image: url('deniz.jpg');background-size: 700px 500px;">
+		
+		
+
+		<caption align="top">
+			
+		</caption>
+
+		
+
+		<thead>
+			
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td><button class="button" type="button" id="1" onclick="getir(1)">1</button></td>
+				<td><button class="button" type="button" id="2" onclick="getir(2)">2</button></td>
+				<td><button class="button" type="button" id="3" onclick="getir(3)">3</button></td>
+				<td><button class="button" type="button" id="4" onclick="getir(4)">4</button></td>
+				<td><button class="button" type="button" id="5" onclick="getir(5)">5</button></td>
+				<td><button class="button" type="button" id="6" onclick="getir(6)">6</button></td>
+				<td><button class="button" type="button" id="7" onclick="getir(7)">7</button></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td><button class="button" type="button" id="8" onclick="getir(8)">8</button></td>
+				<td><button class="button" type="button" id="9" onclick="getir(9)">9</button></td>
+				<td><button class="button" type="button" id="10" onclick="getir(10)">10</button></td>
+				<td><button class="button" type="button" id="11" onclick="getir(11)">11</button></td>
+				<td><button class="button" type="button" id="12" onclick="getir(12)">12</button></td>
+				<td><button class="button" type="button" id="13" onclick="getir(13)">13</button></td>
+				<td><button class="button" type="button" id="14" onclick="getir(14)">14</button></td>
+			</tr>
+			<tr>
+				<td><button class="button" type="button" id="15" onclick="getir(15)">15</button></td>
+				<td><button class="button" type="button" id="16" onclick="getir(16)">16</button></td>
+				<td><button class="button" type="button" id="17" onclick="getir(17)">17</button></td>
+				<td><button class="button" type="button" id="18" onclick="getir(18)">18</button></td>
+				<td><button class="button" type="button" id="19" onclick="getir(19)">19</button></td>
+				<td><button class="button" type="button" id="20" onclick="getir(20)">20</button></td>
+				<td><button class="button" type="button" id="21" onclick="getir(21)">21</button></td>
+			</tr>
+			<tr>
+				<td><button class="button" type="button" id="22" onclick="getir(22)">22</button></td>
+				<td><button class="button" type="button" id="23" onclick="getir(23)">23</button></td>
+				<td><button class="button" type="button" id="24" onclick="getir(24)">24</button></td>
+				<td><button class="button" type="button" id="25" onclick="getir(25)">25</button></td>
+				<td><button class="button" type="button" id="26" onclick="getir(26)">26</button></td>
+				<td><button class="button" type="button" id="27" onclick="getir(27)">27</button></td>
+				<td><button class="button" type="button" id="28" onclick="getir(28)">28</button></td>
+			</tr>
+			<tr>
+				<td><button class="button" type="button" id="29" onclick="getir(29)">29</button></td>
+				<td><button class="button" type="button" id="30" onclick="getir(30)">30</button></td>
+				<td><button class="button" type="button" id="31" onclick="getir(31)">31</button></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+		</tbody>
+	</table><br>
+<center>Tanıtımı dinlemek için Oynat tuşuna basınız. <br> <audio id="ses" controls autoplay><source id="kaynak" src="sesler/ilk.mp4" type="audio/mpeg">Ses çalma desteklenmiyor. Başka tarayıcıda deneyiniz.</audio></center>
+
+<script>
+	aykontrol();
+	function temizle(){
+		document.getElementById("1").className = "button";
+		document.getElementById("2").className = "button";
+		document.getElementById("3").className = "button";
+		document.getElementById("4").className = "button";
+		document.getElementById("5").className = "button";
+		document.getElementById("6").className = "button";
+		document.getElementById("7").className = "button";
+		document.getElementById("8").className = "button";
+		document.getElementById("9").className = "button";
+		document.getElementById("10").className = "button";
+		document.getElementById("11").className = "button";
+		document.getElementById("12").className = "button";
+		document.getElementById("13").className = "button";
+		document.getElementById("14").className = "button";
+		document.getElementById("15").className = "button";
+		document.getElementById("16").className = "button";
+		document.getElementById("17").className = "button";
+		document.getElementById("18").className = "button";
+		document.getElementById("19").className = "button";
+		document.getElementById("20").className = "button";
+		document.getElementById("21").className = "button";
+		document.getElementById("22").className = "button";
+		document.getElementById("23").className = "button";
+		document.getElementById("24").className = "button";
+		document.getElementById("25").className = "button";
+		document.getElementById("26").className = "button";
+		document.getElementById("27").className = "button";
+		document.getElementById("28").className = "button";
+		document.getElementById("29").className = "button";
+		document.getElementById("30").className = "button";
+		document.getElementById("31").className = "button";
+	}
+	function aykontrol(){
+		var ay = document.getElementById("aylar").value;
+		temizle();
+		switch (ay){
+			case "1":
+				document.getElementById("13").className = "buttonaktif";
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "2":
+				document.getElementById("14").className = "buttonaktif";
+				document.getElementById("20").className = "buttonaktif";
+			break;
+			case "3":
+				document.getElementById("14").className = "buttonaktif";
+				document.getElementById("23").className = "buttonaktif";
+			break;
+			case "4":
+				document.getElementById("14").className = "buttonaktif";
+				document.getElementById("18").className = "buttonaktif";
+			break;
+			case "5":
+				document.getElementById("5").className = "buttonaktif";
+				document.getElementById("14").className = "buttonaktif";
+				document.getElementById("20").className = "buttonaktif";
+			break;
+			case "6":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "7":
+				document.getElementById("14").className = "buttonaktif";
+				document.getElementById("31").className = "buttonaktif";
+			break;
+			case "8":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "9":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "10":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "11":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			case "12":
+				document.getElementById("14").className = "buttonaktif";
+			break;
+			
+		}
+	}
+
+	function getir(i){
+		var ay = document.getElementById("aylar").value;
+		var aygun = ay + i;
+		var ses = document.getElementById("ses");
+		var kaynak = document.getElementById("kaynak");
+		document.getElementById("tablo").style.backgroundImage="url('sesler/dogu.jpg')";
+		
+		switch (aygun) {
+			case "113":
+				kaynak.src="sesler/13ocak.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "114":
+				kaynak.src="sesler/14ocak.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "214":
+				kaynak.src="sesler/14subat.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "220":
+				kaynak.src="sesler/20subat.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "314":
+				kaynak.src="sesler/14mart.m4a";
+				ses.load();
+				ses.play();
+				break;
+			case "323":
+				kaynak.src="sesler/23mart.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "414":
+				kaynak.src="sesler/14nisan.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "418":
+				document.getElementById("tablo").style.backgroundImage="url('sesler/418.jpg')";
+				kaynak.src="sesler/18nisan.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "55":
+				kaynak.src="sesler/5mayıs.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "514":
+				kaynak.src="sesler/14mayıs.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "520":
+				document.getElementById("tablo").style.backgroundImage="url('sesler/520.jpg')";
+				kaynak.src="sesler/20mayıs.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "614":
+				kaynak.src="sesler/14haziran.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "714":
+				kaynak.src="sesler/14temmuz.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "731":
+				kaynak.src="sesler/31temmuz.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "814":
+				kaynak.src="sesler/14agustos.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "914":
+				kaynak.src="sesler/14eylül.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "1014":
+				kaynak.src="sesler/14ekim.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "1114":
+				kaynak.src="sesler/14kasım.mp4";
+				ses.load();
+				ses.play();
+				break;
+			case "1214":
+				kaynak.src="sesler/14aralık.mp4";
+				ses.load();
+				ses.play();
+				break;
+		
+		}
+		
+	}
+	
+
+</script>
+
+<div id="icerik" align="center"> </div>
+</body>
+
+</html>
