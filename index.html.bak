@@ -73,7 +73,7 @@ body {
 	<br />
 	
 	<table id="tablo" bgcolor="lightgrey" align="center" 
-		cellspacing="13" cellpadding="13" style="background-image: url('deniz.jpg');background-size: 700px 500px;">
+		cellspacing="13" cellpadding="13" style="background-image: url('deniz.jpg');background-size: 800px 500px;">
 		
 		
 
