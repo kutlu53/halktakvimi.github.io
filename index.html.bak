@@ -266,6 +266,7 @@ body {
 				ses.play();
 				break;
 			case "314":
+				document.getElementById("tablo").style.backgroundImage="url('mart.jpg')";
 				kaynak.src="14mart.m4a";
 				ses.load();
 				ses.play();
@@ -277,6 +278,7 @@ body {
 				ses.play();
 				break;
 			case "414":
+				document.getElementById("tablo").style.backgroundImage="url('nisan.jpg')";	
 				kaynak.src="14nisan.mp4";
 				ses.load();
 				ses.play();
@@ -288,11 +290,13 @@ body {
 				ses.play();
 				break;
 			case "55":
+				document.getElementById("tablo").style.backgroundImage="url('dogu.jpg')";
 				kaynak.src="5mayıs.mp4";
 				ses.load();
 				ses.play();
 				break;
 			case "514":
+				document.getElementById("tablo").style.backgroundImage="url('dogu.jpg')";
 				kaynak.src="14mayıs.mp4";
 				ses.load();
 				ses.play();
