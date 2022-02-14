@@ -355,7 +355,9 @@ body {
 
 </script>
 
-<div id="icerik" align="center"> En üstte aylardan birini seçtikten sonra, özel günleri belirten mavi butonlara tıklayarak o güne ait anlam ve hikayeye ulaşabilirsiniz.</div>
+<div id="icerik" align="center"> </div> <br>
+
+<center>En üstte aylardan birini seçtikten sonra, özel günleri belirten mavi butonlara tıklayarak o güne ait anlam ve hikayeye ulaşabilirsiniz.</center>
 </body>
 
 </html>
